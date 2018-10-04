@@ -1,3 +1,3 @@
 FROM alpine:latest
-ENTRYPOINT ["/bin/ping"]
+ENTRYPOINT ["/bin/ping -c 4"]
 CMD ["localhost"]
