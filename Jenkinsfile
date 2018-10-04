@@ -1,4 +1,5 @@
-node('atlassian') {
+pipeline {
+	agent atlassian
     stages {
         stage('buildimage') {
             steps {
