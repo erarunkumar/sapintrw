@@ -1,5 +1,5 @@
 pipeline {
-    agent atlassian
+    agent any 
     stages {
         stage('buildimage') {
             steps {
