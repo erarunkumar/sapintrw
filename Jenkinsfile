@@ -1,5 +1,9 @@
 pipeline {
-	agent atlassian
+	agent {
+		docker {
+			label 'atlassian'
+		}
+	}
     stages {
         stage('buildimage') {
             steps {
